@@ -1,11 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const signIn = async () => {
     const deviceCode = await fetch("https://github.com/login/device/code", {
       method: "POST",
